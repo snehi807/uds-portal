@@ -80,7 +80,7 @@ export function HubChart({ data }: ChartProps) {
       <h3 className="text-sm font-semibold mb-4 font-display" style={{ color: "#e2e8f0" }}>Top Hubs by UDS Tickets</h3>
       <ResponsiveContainer width="100%" height={200}>
         <BarChart data={chartData} margin={{ top: 4, right: 8, left: -20, bottom: 40 }}>
-          <XAxis dataKey="name" tick={{ fill: "rgba(226,232,240,0.5)", fontSize: 10, angle: -30, textAnchor: "end" }} axisLine={false} tickLine={false} />
+          <XAxis dataKey="name" tick={false} axisLine={false} tickLine={false} />
           <YAxis tick={{ fill: "rgba(226,232,240,0.5)", fontSize: 11 }} axisLine={false} tickLine={false} />
           <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(56,189,248,0.05)" }} />
           <Bar dataKey="value" fill="#38bdf8" radius={[4, 4, 0, 0]} />
